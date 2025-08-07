@@ -1,0 +1,56 @@
+
+            /* 分类区块样式：下边距 */
+            .category {
+                margin-bottom: 30px;
+            }
+    
+            /* 分类标题样式：颜色和下边距 */
+            .category h2 {
+                color: #795548;
+                margin-bottom: 15px;
+            }
+    
+            /* 链接网格布局：自适应列数和间距 */
+            .links {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+                gap: 20px;
+            }
+    
+            /* 单个链接样式：背景、圆角、阴影、内边距和悬停动画 */
+            .link {
+                background-color: #33;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+    
+            /* 链接悬停效果：轻微放大 */
+            .link:hover {
+                transform: scale(1.05);
+            }
+    
+            /* 链接文本样式：颜色、无下划线、字体大小 */
+            .link a {
+                color: #F74449;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            
+            /* 覆盖的背景颜色和文字颜色 */
+            body {
+                background-color: #333;
+                color: #fff;
+            }
+        
+            /* 背景图片设置：自适应覆盖、居中、不重复 */
+            body {
+                background-image: url('bg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+                margin: 0;
+            }
