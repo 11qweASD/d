@@ -34,7 +34,7 @@
     
             /* 链接文本样式：颜色、无下划线、字体大小 */
             .link a {
-                color: #F74449;
+                color: #099df3;
                 text-decoration: none;
                 font-size: 18px;
             }
@@ -53,4 +53,5 @@
                 background-repeat: no-repeat;
                 height: 100vh;
                 margin: 0;
+
             }
