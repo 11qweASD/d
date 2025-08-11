@@ -37,6 +37,17 @@
                         text-align: center;
                         margin-bottom: 30px;
                     }
+
+                        @media (max-width: 600px) {
+    .container {
+        width: 95%; /* 小屏幕下增加宽度占比 */
+        padding: 15px; /* 减少内边距 */
+    }
+    .category {
+        grid-template-columns: 1fr; /* 单列布局 */
+    }
+}
+
             
                 </style>
             </head>
@@ -99,7 +110,6 @@
                             </div>
                              <div class="link">
                                <a href="https://www.superbed.cn/"> 聚合图床</a>           
-                        </div>
                         </div>       
                      </div><
                  </div>
