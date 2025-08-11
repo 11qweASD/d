@@ -1,102 +1,90 @@
 <!DOCTYPE html>
-        <html lang="zh-CN">
-        
-        
-            <head>
-                <!-- 基本元数据：字符编码和响应式视口设置 -->
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>自适应拟态网址导航目录</title>
-                <link rel="stylesheet" href="1.css">
-                <!DOCTYPE html>
-                <style>   
-                    /* 主体样式：字体、背景色、flex居中布局 */
-                    body {
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                        background-color: #f0f0f0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        min-height: 100vh;
-                        margin: 0;
-                    }
-            
-                    /* 主容器样式：圆角、阴影、内边距和最大宽度 */
-                    .container {
-                        background-color: #33;
-                        border-radius: 20px;
-                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-                        padding: 30px;
-                        width: 90%;
-                        max-width: 800px;
-                    }
-            
-                    /* 主标题样式：颜色、居中对齐和下边距 */
-                    h1 {
-                        color: #AAAAAA;
-                        text-align: center;
-                        margin-bottom: 30px;
-                    }
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自适应拟态网址导航目录</title>
+    <link rel="stylesheet" href="1.css">
 
-                        @media (max-width: 600px) {
-    .container {
-        width: 95%; /* 小屏幕下增加宽度占比 */
-        padding: 15px; /* 减少内边距 */
-    }
-    .category {
-        grid-template-columns: 1fr; /* 单列布局 */
-    }
+    <style>
+        /* 主体样式 */
+        body {  
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+                    background-color: #f0f0f0;  
+                    display: flex;  
+                    justify-content: center;  
+                    align-items: center;  
+                    min-height: 100vh;  
+                    margin: 0;  
+                }  
+          
+                /* 主容器样式：圆角、阴影、内边距和最大宽度 */  
+                .container {  
+                    background-color: #33;  
+                    border-radius: 20px;  
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);  
+                    padding: 30px;  
+                    width: 90%;  
+                    max-width: 800px;  
+                }  
+          
+                /* 主标题样式：颜色、居中对齐和下边距 */  
+                h1 {  
+                    color: #AAAAAA;  
+                    text-align: center;  
+                    margin-bottom: 30px;  
+                }  
+
+                    @media (max-width: 600px) {  
+.container {  
+    width: 95%; /* 小屏幕下增加宽度占比 */  
+    padding: 15px; /* 减少内边距 */  
+}  
+.category {  
+    grid-template-columns: 1fr; /* 单列布局 */  
 }
 
-            
-                </style>
-            </head>
-            
-            <body>
-                <!-- 主内容容器 -->
-                <div class="container">
-                    <!-- 页面主标题 -->
-                    <h1>常用网址导航</h1>
-                    
-                    <!-- 搜索引擎分类区块 -->
-                    <div class="category">
-                        <h2>搜索引擎</h2>
-                        <div class="links">
-                            <div class="link">
-                                <a href="https://www.baidu.com">百度</a>
-                            </div>
-                            <div class="link">
-                                <a href="https://www.google.com">谷歌</a>
-                            </div>
-                            <div class="link">
-                                <a href="https://www.bing.com">必应</a>
-                            </div>
-                            <div class="link">
-                            <a href="https://www.so.com">360 搜索</a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 视频网站分类区块 -->
-                    <div class="category">
-                        <h2>视频网站</h2>
-                        <div class="links">
-                            <div class="link">
-                                <a href="https://www.yydsym.com">YYDS源码网</a>
-                            </div>
-                            <div class="link">
-                                <a href="https://www.bilibili.com">哔哩哔哩</a>
-                            </div>
-                            <div class="link">
-                                <a href="https://www.iqiyi.com">爱奇艺</a>
-                            </div>
-                            <div class="link">
-                                <a href="https://www.youku.com">优酷</a>
-                            </div>
-                        </div>
-                    </div>
-                     
-            </body>
-            
-            </html>
+                    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>常用网址导航</h1>
+
+        <!-- 搜索引擎分类 -->
+        <div class="category">
+            <h2>搜索引擎</h2>
+            <div class="links">
+                <div class="link"><a href="https://www.baidu.com">百度</a></div>
+                <div class="link"><a href="https://www.google.com">谷歌</a></div>
+                <div class="link"><a href="https://www.bing.com">必应</a></div>
+                <div class="link"><a href="https://www.so.com">360 搜索</a></div>
+            </div>
+        </div>
+
+        <!-- 视频网站分类 -->
+        <div class="category">
+            <h2>视频网站</h2>
+            <div class="links">
+                <div class="link"><a href="https://www.yydsym.com">YYDS源码网</a></div>
+                <div class="link"><a href="https://www.bilibili.com">哔哩哔哩</a></div>
+                <div class="link"><a href="https://www.iqiyi.com">爱奇艺</a></div>
+                <div class="link"><a href="https://www.youku.com">优酷</a></div>
+            </div>
+        </div>
+    </div>
+
+        <div class="category">
+            <h2>视频网站</h2>
+            <div class="links">
+                <div class="link"><a href="https://8oemw0.toclouds3.pro">加速器</a></div>
+                <div class="link"><a href="https://weixin110.qq.com/cgi-bin/mmspamsupport-bin/newredirectconfirmcgi?click=95741437820abab0d6644d45ef9c448e&bankey=3b72d728540798fa3512ae6e9e1d20e3&midpagecode=67377a2adb44e17c1b0adb24b5cf2bd17d54f6305ef3b6871f1723a4869f23752efd30768fd6ba8c4a71fcb6003839950062e14eaa2b6c3ed741c8e9579694bf34c04c668fb8078ab29144c954006e60750533ebc665ece62f41e740f780a5ad&bancode=7cf6ad647af246153463f7b50911e6294286ef05ce225dd0bc3802a33844cdd4#wechat_redirect">聚合图床</a></div>
+                <div class="link"><a href="https://www.superbed.cn/">聚合图床</a></div>          
+                <div class="link"><a href="sp.kvvk.xyz">视频</a></div>
+                <div class="link"><a href="https://github.com/">git</a></div>          
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
